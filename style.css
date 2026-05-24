@@ -178,7 +178,7 @@ h2 {
 .research-note,
 .research-journal,
 .research-links {
-  font-size: 16px;
+  font-size: 14.5px;
   line-height: 1.42;
   color: var(--muted);
   margin: 0;
@@ -393,4 +393,38 @@ footer {
 
 .bio-inline-links a:hover {
   color: var(--ink);
+}
+
+
+/* Final polish: presentation links, teaching titles, writing note */
+.research-links.jmp-links {
+  font-size: 14.5px;
+  line-height: 1.42;
+}
+
+.research-links.jmp-links a {
+  font-size: inherit;
+}
+
+.teaching-page .teaching-entry h3 {
+  font-size: 20px;
+}
+
+.writing-note {
+  margin: 2px 0 0;
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.writing-note a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(112, 104, 94, 0.30);
+}
+
+.writing-note a:hover {
+  color: var(--ink);
+  border-bottom-color: rgba(29, 27, 24, 0.62);
 }
