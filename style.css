@@ -109,8 +109,8 @@ nav a.active {
 }
 
 .bio:first-child {
-  font-size: 23px;
-  line-height: 1.38;
+  font-size: 18.5px;
+  line-height: 1.70;
   color: var(--ink);
   margin-bottom: 28px;
 }
@@ -287,10 +287,6 @@ footer a {
   .bio-photo {
     width: 220px;
     margin-top: 34px;
-  }
-
-  .bio:first-child {
-    font-size: 20px;
   }
 
   .research-entry h3 {
