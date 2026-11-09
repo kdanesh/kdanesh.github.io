@@ -93,7 +93,7 @@ nav a.active {
 }
 
 .bio-photo {
-  width: 238px;
+  width: 258px;
   aspect-ratio: 4 / 5.35;
   object-fit: cover;
   object-position: 50% 20%;
