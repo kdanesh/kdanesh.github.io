@@ -25,15 +25,6 @@
       color: var(--ink, #1d1b18);
       border-bottom-color: rgba(29, 27, 24, 0.62);
     }
-    .abstract-button .abstract-chevron {
-      display: inline-block;
-      margin-left: 1px;
-      font-size: 0.76em;
-      transition: transform 150ms ease;
-    }
-    .abstract-button[aria-expanded="true"] .abstract-chevron {
-      transform: rotate(180deg);
-    }
     .research-abstract {
       max-width: 720px;
       margin: 12px 0 7px;
@@ -45,9 +36,6 @@
     /* Bold only the Job Market Paper label, not the title. */
     .jmp-entry .writing-inline-note { font-weight: 700; }
     .research-abstract p { margin: 0; }
-    @media (prefers-reduced-motion: reduce) {
-      .abstract-button .abstract-chevron { transition: none; }
-    }
   </style>
 
 </head>
@@ -79,7 +67,7 @@
         <p class="research-links jmp-links">
           <a href="jmp.pdf" target="_blank" rel="noopener">Paper</a>
           <span class="separator">·</span>
-          <button type="button" class="abstract-button" id="jmp-abstract-trigger" aria-controls="jmp-abstract" aria-expanded="false">Abstract <span class="abstract-chevron" aria-hidden="true">⌄</span></button>
+          <button type="button" class="abstract-button" id="jmp-abstract-trigger" aria-controls="jmp-abstract" aria-expanded="false">Abstract</button>
           <span class="separator">·</span>
           <a href="https://www.nber.org/conferences/si-2026-economics-health">NBER SI Health 2026</a>
           <span class="separator">·</span>
@@ -88,7 +76,7 @@
           <a href="https://convention2.allacademic.com/one/appam/appam25/online_program_direct_link/view_paper/2260914/">APPAM 2025</a>
         </p>
         <div class="research-abstract" id="jmp-abstract" hidden>
-          <p>Mental illness tends to arise when young workers are establishing themselves in the labor market. Using nationwide employer-employee records and medical claims data from Colombia, we use a matched difference-in-differences design to estimate the long-run effects of common mental health disorders on earnings. Among a cohort of young, formally-employed workers, newly diagnosed anxiety and depression reduce earnings for at least five years following diagnosis. In the short run, earnings losses mainly reflect fewer days worked; in the longer run, they reflect lower employment and wages. Part of the earnings effect is driven by reduced employment at firms with high wage premia, consistent with impaired mobility up the job ladder. To examine whether treatment mitigates these losses, we use an instrumental variables design that leverages insurer-specific variation in access to specialty mental health care. Treatment offsets the earnings penalty among compliers, suggesting that timely mental health care can help preserve economic opportunity.</p>
+          <p>Mental illness tends to arise when young workers are establishing themselves in the labor market. Using nationwide employer-employee records and medical claims data from Colombia, we use a matched difference-in-differences design to estimate the long-run effects of common mental health disorders on earnings. Among a cohort of young, formally-employed workers, newly diagnosed anxiety and depression reduce earnings for at least five years following diagnosis. In the short run, earnings losses mainly reflect fewer days worked; in the longer run, they reflect lower employment and wages. Part of the earnings effect is driven by reduced employment at firms with high wage premia, consistent with impaired mobility up the job ladder. To examine whether treatment mitigates these losses, we use an instrumental variables design that leverages insurer-specific variation in access to specialty mental health care. Treatment offsets most of the earnings penalty among compliers, suggesting that timely mental health care can help preserve economic opportunity.</p>
         </div>
       </article>
 
@@ -98,7 +86,7 @@
         <p class="research-links">
           <a href="https://personal.lse.ac.uk/spinnewi/Health_Inequality_draft.pdf">Paper</a>
           <span class="separator">·</span>
-          <button type="button" class="abstract-button" id="lifecycle-abstract-trigger" aria-controls="lifecycle-abstract" aria-expanded="false">Abstract <span class="abstract-chevron" aria-hidden="true">⌄</span></button>
+          <button type="button" class="abstract-button" id="lifecycle-abstract-trigger" aria-controls="lifecycle-abstract" aria-expanded="false">Abstract</button>
           <span class="separator">·</span>
           <a href="https://www.nber.org/conferences/si-2024-economics-health">NBER SI Health 2024</a>
           <span class="separator">·</span>
@@ -112,7 +100,7 @@
       <article class="research-entry">
         <h3>The Impacts of Palliative Care on Spending, Suffering, and Mortality</h3>
         <p class="research-links">
-          <button type="button" class="abstract-button" id="palliative-abstract-trigger" aria-controls="palliative-abstract" aria-expanded="false">Abstract <span class="abstract-chevron" aria-hidden="true">⌄</span></button>
+          <button type="button" class="abstract-button" id="palliative-abstract-trigger" aria-controls="palliative-abstract" aria-expanded="false">Abstract</button>
         </p>
         <div class="research-abstract" id="palliative-abstract" hidden>
           <p>Health care costs are highly concentrated at the end of life. Is such spending wasteful, or does it appropriately reflect an increase in medical need? To address this question, we study the impacts of palliative care, a growing specialty aimed at improving quality of life among individuals with serious illness. Leveraging staggered adoption across hospitals, we find that palliative care induces a 12% reduction in costs without reducing survival, suggesting that marginal spending near the end of life is flat-of-the-curve. To investigate how physicians target spending reductions, we compare their referral decisions with mortality predictions from a machine learning model. We find that physicians incorporate prognostic information not captured by the model, consistent with clinical judgment playing an important role in identifying opportunities to reduce low-value care.</p>
@@ -122,7 +110,7 @@
       <article class="research-entry">
         <h3>Is Mental Illness Undertreated? Evidence from Integrated Mental Health Care</h3>
         <p class="research-links">
-          <button type="button" class="abstract-button" id="integrated-mh-abstract-trigger" aria-controls="integrated-mh-abstract" aria-expanded="false">Abstract <span class="abstract-chevron" aria-hidden="true">⌄</span></button>
+          <button type="button" class="abstract-button" id="integrated-mh-abstract-trigger" aria-controls="integrated-mh-abstract" aria-expanded="false">Abstract</button>
         </p>
         <div class="research-abstract" id="integrated-mh-abstract" hidden>
           <p>I study the impacts of a VA program that aimed to improve recognition and treatment of mental illness by embedding mental health practitioners in the primary care setting, thereby increasing proximity to mental health care. Leveraging staggered adoption of the program, I find that it increased recognition and treatment of mental health disorders and reduced mortality. Patients induced into treatment are less likely to be racial minorities and more likely to be low income, have low social capital, and suffer from diseases of despair. Because these patients realized health gains through improved access to treatment, I conclude that mental illness is underdiagnosed in this population and that policies aiming to increase access to mental health care could help address the deaths of despair crisis.</p>
@@ -133,7 +121,7 @@
         <h3>Sources of Socioeconomic Inequality in Cancer Mortality</h3>
         <p class="research-meta">with Mieke Aarts, Jon Kolstad, Will Parker, and Johannes Spinnewijn</p>
         <p class="research-links">
-          <button type="button" class="abstract-button" id="cancer-abstract-trigger" aria-controls="cancer-abstract" aria-expanded="false">Abstract <span class="abstract-chevron" aria-hidden="true">⌄</span></button>
+          <button type="button" class="abstract-button" id="cancer-abstract-trigger" aria-controls="cancer-abstract" aria-expanded="false">Abstract</button>
         </p>
         <div class="research-abstract" id="cancer-abstract" hidden>
           <p>A large empirical literature documents that poorer individuals have worse health than richer individuals. These disparities may arise from differences in disease risk, screening, or treatment. We link administrative tax records to cancer registry data covering the Dutch population to investigate the relative importance of these channels for cancer mortality. Individuals in the bottom decile of the income distribution have 11% higher cancer incidence than individuals in the top decile, but this masks substantial heterogeneity across cancer types: lung, head and neck, and cervical cancers are 197%, 185%, and 143% more common among the bottom decile, respectively, whereas skin and prostate cancers are 43% and 37% less common. Using a simple decomposition, we find that such differences in cancer-type composition account for 44% of the income gradient in cancer mortality, compared with 22% for survival, 18% for overall incidence, and 3% for stage at diagnosis. These findings suggest that socioeconomic disparities in cancer mortality primarily arise before diagnosis, highlighting the importance of upstream determinants of disease risk in settings with universal health insurance.</p>
